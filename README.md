@@ -5,7 +5,7 @@
 
 **An RStudio add-in that brings the power of [DataLinter](https://github.com/zgornel/DataLinter) directly into your RStudio session.**
 
-DataLinter performs automated sanity checks and linting on data frames and modelling code (23 built-in linters covering missing values, outliers, type consistency, modelling assumptions, and more). This add-in lets you lint selected code (and optional data) with a single click from the **Addins** menu.
+DataLinter performs automated sanity checks and linting on data frames and modelling code (27 built-in linters covering missing values, outliers, type consistency, modelling assumptions, and more). This add-in lets you lint selected code (and optional data) with a single click from the **Addins** menu.
 
 ![DataLinter RStudio add-in in action](./gifs/rstudio_linting.gif)
 
@@ -27,7 +27,7 @@ DataLinter performs automated sanity checks and linting on data frames and model
 - Real-time feedback inside RStudio (via the add-in UI powered by `rstudioapi`).
 - Zero-configuration integration with the official DataLinter Docker server.
 
-See the full [DataLinter documentation](https://zgornel.github.io/DataLinter/dev/) for details on the 23 linters and configuration options.
+See the full [DataLinter documentation](https://zgornel.github.io/DataLinter/dev/) for details on the 27 linters and configuration options.
 
 
 ## Prerequisites
@@ -49,10 +49,10 @@ docker pull ghcr.io/zgornel/datalinter-compiled:latest
 
 ```r
 # Recommended (fast & dependency-aware)
-pak::pak("zgornel/Rstudio-Addin-DataLinter")
+pak::pak("OxoaResearch/Rstudio-Addin-DataLinter")
 
 # Alternative
-devtools::install_github("zgornel/Rstudio-Addin-DataLinter")
+devtools::install_github("OxoaResearch/Rstudio-Addin-DataLinter")
 ```
 After installation the add-in appears automatically under **Addins → DATALINTER**.
 
@@ -98,12 +98,12 @@ If the server starts correctly, it should display something like:
 - **Windows / macOS** → Ensure Docker Desktop is running and “File Sharing” includes your project folders if using volumes
  -**No output** → Verify the server log shows successful connection; try increasing logging level with `--log-level debug`
 
-Report issues via [GitHub Issues](https://github.com/zgornel/Rstudio-Addin-DataLinter/issues/new).
+Report issues via [GitHub Issues](https://github.com/OxoaResearch/Rstudio-Addin-DataLinter/issues/new).
 
 
 ## Contributing
 
-Please [file an issue](https://github.com/zgornel/Rstudio-Addin-DataLinter/issues/new) to report a bug or request a feature. See the parent [DataLinter contributing guidelines](https://github.com/zgornel/DataLinter/blob/master/CONTRIBUTING.md) as well.
+Please [file an issue](https://github.com/OxoaResearch/Rstudio-Addin-DataLinter/issues/new) to report a bug or request a feature. See the parent [DataLinter contributing guidelines](https://github.com/zgornel/DataLinter/blob/master/CONTRIBUTING.md) as well.
 
 
 ## License
